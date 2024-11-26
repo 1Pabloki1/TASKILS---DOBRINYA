@@ -1,0 +1,185 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Шапка */
+header {
+  background: linear-gradient(45deg, #ff7f50, #ff4500);
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Секции */
+section {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* О нас */
+#about {
+  background: #f0f8ff;
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.prof {
+	display: flex; 
+	justify-content: center;
+}
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+/* Проекты */
+#projects {
+  background: #f5f5f5;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+}
+
+.projects-list li {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Контакты */
+#contacts {
+  background: #ffefd5;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-list li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contacts-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Футер */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* --- Адаптивные стили --- */
+
+/* Для экранов шириной меньше 768px */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .team {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projects-list li {
+    padding: 15px;
+  }
+
+  #about p {
+    text-align: justify;
+    margin: 0 10px;
+  }
+}
+
+/* Для экранов шириной меньше 480px */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header ul {
+    gap: 5px;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .projects-list li {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+}
